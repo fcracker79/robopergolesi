@@ -1,0 +1,8 @@
+*** Esempio scemo come la merda ***
+
+vi n1 n2 dc 1V ac 0V
+R1 n3 n1 2.4k
+C1 n3 n2 2nF
+RS n3 n2 2k
+.dc vi 0 100 0.01
+.end
