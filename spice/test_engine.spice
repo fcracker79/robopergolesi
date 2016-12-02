@@ -1,0 +1,10 @@
+*** Test engine control ***
+*** plot v(4), v(3)
+.MODEL Q_NPN NPN(IS=800.0E-18 BF=2.000E3)
+vi 1 0 dc 1V ac 0V
+Q1 3 2 0 Q_NPN
+Rb 1 2 1k
+Rc 3 4 2k
+vl 4 0 dc 4.8V ac 0V
+.dc vi -1.5 1.5 0.01
+.end
