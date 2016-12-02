@@ -3,10 +3,11 @@
 .include LM239.5_1
 
 vi pin pref dc 1V ac 0V
-xstocazzo pin g ps pg p1 LM239
+* Here we should use pref rather than 0
+xstocazzo pin 0 ps pg p1 LM239
 vs ps pg dc 5V ac 0V
 Cl p1 pg 15pF
 Rp p1 p2 2.4k
-vl p2 g dc 4.8V ac 0V
+vl p2 0 dc 4.8V ac 0V
 .dc vi 0 1.5 0.01
 .end
