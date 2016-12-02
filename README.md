@@ -17,3 +17,4 @@ Useful links
 [Some Spice stuff reference](http://bwrcs.eecs.berkeley.edu/Classes/IcBook/SPICE/UserGuide/elements_fr.html)
 [Some transistors configurations](http://sentex.ca/~mec1995/tutorial/xtor/xtor2/xtor2.html)
 [Supercool examples](http://www.next.gr/automations/motor-control-circuits/)
+[Engine control](https://learn.adafruit.com/adafruit-raspberry-pi-lesson-9-controlling-a-dc-motor/parts)
