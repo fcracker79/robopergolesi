@@ -551,6 +551,15 @@ The GPIO Connector (P1):&lt;br&gt;
 <text x="-22.86" y="71.12" size="1.778" layer="91">Motor</text>
 <circle x="33.02" y="71.12" radius="3.5921" width="0.1524" layer="91"/>
 <text x="30.48" y="71.12" size="1.778" layer="91">Steer</text>
+<text x="0" y="114.3" size="1.778" layer="91">1-2 EN (1) -&gt; GPIO18 (12, PWM)
+1A (2) -&gt; GPIO24 (18)
+2A (7) -&gt; GPIO25 (22)
+1Y (3), 2Y (6) -&gt; Motor
+
+3-4 EN (9) -&gt; GPIO22 (no PWM, always ON)
+3A (10) -&gt; GPIO21 (13)
+4A (15) -&gt; GPIO0 (3)
+3Y (11), 4Y (14) -&gt; Steer</text>
 </plain>
 <instances>
 <instance part="IC1" gate="G$1" x="5.08" y="71.12"/>
@@ -685,4 +694,10 @@ The GPIO Connector (P1):&lt;br&gt;
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
