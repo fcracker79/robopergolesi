@@ -20,6 +20,8 @@ Useful links
 * [Supercool examples](http://www.next.gr/automations/motor-control-circuits/)
 * [Engine control](https://learn.adafruit.com/adafruit-raspberry-pi-lesson-9-controlling-a-dc-motor/parts)
 * [Mappa pin Rpi](https://projects.drogon.net/raspberry-pi/wiringpi/pins/)
+* [Online circuit simulator](http://www.partsim.com/)
+* [Useful libraries for Eagle](https://github.com/sparkfun/SparkFun-Eagle-Libraries)
 
 Scheme proposal
 ---------------
