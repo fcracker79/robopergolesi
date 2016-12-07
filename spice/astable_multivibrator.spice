@@ -1,0 +1,20 @@
+*** Test oscillator ***
+*** It should be 1.5 KH frequency, but by measurements, it seems to be about 550 HZ ***
+*** plot v(6) ***
+*** Please see http://www.electronics-tutorials.ws/waveforms/astable.html for other parameters ***
+.MODEL BC547 NPN(BF=136 VJC=0.4172 VJE=0.7245 VJS=0.39 VTF=10 XTB=1.5 XTF=2.077 XTI=3)
+.MODEL MyDiode D(IS=1.0e-14) 
+vi vi_1 0 dc 3V ac 0V
+r3 vi_1 1 470
+r1 vi_1 2 47K
+r2 vi_1 3 47K
+r4 vi_1 4 470
+D1 1 5 MyDiode
+D2 4 6 MyDiode
+c1 5 3 10nF
+c2 2 6 10nF
+Q2 5 2 0 BC547
+Q1 6 3 0 BC547
+* RX 4 0 1K
+.tran 0.001s 0.4s
+.end
