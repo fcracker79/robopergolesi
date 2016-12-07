@@ -528,13 +528,6 @@ The GPIO Connector (P1):&lt;br&gt;
 <attribute name="MF" value="TEXAS INSTRUMENTS"/>
 <attribute name="MPN" value="L293DNEE4"/>
 </part>
-<part name="U$1" library="RaspberryPi" deviceset="RASPBERRY-PI" device=""/>
-<part name="U$2" library="RaspberryPi" deviceset="RASPBERRY-PI" device=""/>
-<part name="U$3" library="RaspberryPi" deviceset="RASPBERRY-PI" device=""/>
-<part name="U$4" library="RaspberryPi" deviceset="RASPBERRY-PI" device=""/>
-<part name="U$5" library="RaspberryPi" deviceset="RASPBERRY-PI" device=""/>
-<part name="U$6" library="RaspberryPi" deviceset="RASPBERRY-PI" device=""/>
-<part name="U$7" library="RaspberryPi" deviceset="RASPBERRY-PI" device=""/>
 <part name="U$8" library="RaspberryPi" deviceset="RASPBERRY-PI_REV1" device="">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
@@ -621,18 +614,9 @@ The GPIO Connector (P1):&lt;br&gt;
 <segment>
 <pinref part="IC1" gate="G$1" pin="4A"/>
 <wire x1="20.32" y1="83.82" x2="35.56" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="83.82" x2="35.56" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="U$8" gate="G$1" pin="GPIO0,I2C0_SDA"/>
-<wire x1="35.56" y1="86.36" x2="50.8" y2="86.36" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="U$8" gate="G$1" pin="GPIO22"/>
-<pinref part="IC1" gate="G$1" pin="3-4EN"/>
-<wire x1="20.32" y1="53.34" x2="48.26" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="53.34" x2="48.26" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="71.12" x2="50.8" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="83.82" x2="35.56" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="U$8" gate="G$1" pin="GPIO4,GPCLK0"/>
+<wire x1="35.56" y1="81.28" x2="50.8" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -683,10 +667,11 @@ The GPIO Connector (P1):&lt;br&gt;
 </net>
 <net name="N$12" class="0">
 <segment>
-<wire x1="43.18" y1="73.66" x2="50.8" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="58.42" x2="43.18" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="3A"/>
 <wire x1="20.32" y1="58.42" x2="43.18" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="58.42" x2="43.18" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="U$8" gate="G$1" pin="GPIO22"/>
+<wire x1="43.18" y1="71.12" x2="50.8" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
