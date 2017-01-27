@@ -6,15 +6,15 @@
 .MODEL MyDiode D(IS=1.0e-14) 
 vi vi_1 0 dc 3V ac 0V
 r3 vi_1 1 470
-r1 vi_1 2 47K
-r2 vi_1 3 47K
+r1 vi_1 2 100K
+r2 vi_1 3 100K
 r4 vi_1 4 470
 D1 1 5 MyDiode
 D2 4 6 MyDiode
-c1 5 3 10nF
-c2 2 6 10nF
+c1 5 3 4.83nF
+c2 2 6 24.1nF
 Q2 5 2 0 BC547
 Q1 6 3 0 BC547
 * RX 4 0 1K
-.tran 0.001s 0.4s
+.tran 0.001s 10s
 .end
